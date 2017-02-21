@@ -1,0 +1,20 @@
+{
+  "name": "vue-inputmask",
+  "version": "0.1.0",
+  "description": "InputMask for Vue.js",
+  "author": "Simon Clériot <cleriotsimon@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/captiz/vue-inputmask"
+  },
+  "keywords": [
+    "inputmask",
+    "vuejs",
+    "input-mask"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "main": "./vue-inputmask.js"
+}
