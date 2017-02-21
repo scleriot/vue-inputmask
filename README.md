@@ -1,23 +1,18 @@
-# winston-googlecloud
+# vue-inputmask
 
-Google Cloud Logging transport for winston.js
+Vue.js directive to add input mask.
+
+It's a binding for the jquery.inputmask library by Robin Herbots [https://github.com/RobinHerbots/Inputmask](https://github.com/RobinHerbots/Inputmask)
 
 This library is licensed under MIT Licence.
 
 # Usage
 ``` js
-var winston = require('winston');
-//
-// Requiring `winston-googlecloud` will expose
-// `winston.transports.GoogleCloudLogging`
-//
-require('winston-googlecloud');
+var VueInputmask = require('vue-inputmask');
 
-var options = {
-    level: 'verbose',
-    gcl_project_id: 'my-google-project-id',
-    gcl_key_filename: "PATH TO JSON CREDENTIALS FILE",
-    gcl_log_name: "my-log"
-}
-winston.add(winston.transports.GoogleCloudLogging, options);
+Vue.use(VueInputmask);
+```
+
+``` html
+<input type="text" v-mask="99/99/9999" />
 ```
