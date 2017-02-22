@@ -1,6 +1,6 @@
 {
   "name": "vue-inputmask",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "InputMask for Vue.js",
   "author": "Simon Clériot <cleriotsimon@gmail.com>",
   "repository": {
@@ -12,9 +12,7 @@
     "vuejs",
     "input-mask"
   ],
-  "dependencies": {
-  },
-  "devDependencies": {
-  },
+  "dependencies": {},
+  "devDependencies": {},
   "main": "./vue-inputmask.js"
 }
