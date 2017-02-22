@@ -13,7 +13,7 @@
         install: function(Vue, options) {
             Vue.directive('mask', {
                 bind: function(el, binding){
-                    Inputmask(binding.expression).mask(el);
+                    Inputmask(binding.value).mask(el);
                 },
                 unbind: function(el){
                     Inputmask.remove(el);

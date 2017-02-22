@@ -14,5 +14,6 @@ Vue.use(VueInputmask);
 ```
 
 ``` html
-<input type="text" v-mask="99/99/9999" />
+<input type="text" v-mask="'99/99/9999'" />
+<input type="text" v-mask="{mask: '99/99/9999', greedy: true}" />
 ```
