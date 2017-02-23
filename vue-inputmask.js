@@ -6,17 +6,13 @@
  *
  */
 
- (function(){
-    var Inputmask = require('./3rd/inputmask');
-
+(function(){
     var inputmaskPlugin = {
+        InputMask: require('./3rd/inputmask'),
         install: function(Vue, options) {
             Vue.directive('mask', {
                 bind: function(el, binding){
                     Inputmask(binding.value).mask(el);
-                },
-                unbind: function(el){
-                    Inputmask.remove(el);
                 }
             });
         }
