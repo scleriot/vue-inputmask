@@ -9,4 +9,4 @@ declare class inputmaskPlugin {
     static install: PluginFunction<never>;
 }
 
-export = inputmaskPlugin
+export default inputmaskPlugin

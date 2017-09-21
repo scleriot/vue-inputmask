@@ -17,21 +17,20 @@ npm install -S vue-inputmask
 ## With Typescript
 ```typescript
 import Vue from 'vue'
-import VueInputMask from 'vue-inputmask'
+const VueInputMask = require('vue-inputmask').default
 
 Vue.use(VueInputMask)
 ```
 
 ## With a script tag
-
 ```html
 <script src="./node_modules/inputmask/dist/inputmask/dependencyLibs/inputmask.dependencyLib.js"></script>
 <script src="./node_modules/inputmask/dist/inputmask/inputmask.js"></script>
-<script src="./vue-inputmask.js"></script>
+<script src="./dist/vue-inputmask-browser.js"></script>
 ```
 
 # Usage
-``` html
+```html
 <input type="text" v-mask="'99/99/9999'" />
 <input type="text" v-mask="{mask: '99/99/9999', greedy: true}" />
 ```
