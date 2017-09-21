@@ -8,14 +8,18 @@
 
 (function(){
     var inputmaskPlugin = {
-        InputMask: require('./3rd/inputmask'),
+        Inputmask: typeof require=='function'?require('inputmask'):window.Inputmask,
         install: function(Vue, options) {
             Vue.directive('mask', {
-                bind: function(el, binding){
-                    Inputmask(binding.value).mask(el);
+                bind: (el, binding) => {
+                    this.Inputmask(binding.value).mask(el);
                 }
             });
         }
     };
-    module.exports = inputmaskPlugin;
+    if(typeof module == 'object')
+        module.exports = inputmaskPlugin;
+    else {
+        window.VueInputmask = inputmaskPlugin
+    }
 })()
