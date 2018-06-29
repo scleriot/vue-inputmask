@@ -32,5 +32,20 @@ Vue.use(VueInputMask)
 # Usage
 ```html
 <input type="text" v-mask="'99/99/9999'" />
-<input type="text" v-mask="{mask: '99/99/9999', greedy: true}" />
+<input type="text" v-mask="{mask: '99/99/9999', greedy: true}" v-on:change="maskCheck"/>
+```
+
+```javascript
+new Vue({
+  ...
+  methods: {
+    maskCheck: function (field){
+      if (field.target.inputmask.isComplete()) {
+        console.log('is Complete');
+      } else {
+        console.log('is Incomplete');
+      }
+    }
+  }
+});
 ```
