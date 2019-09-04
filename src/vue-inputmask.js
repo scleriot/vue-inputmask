@@ -12,6 +12,9 @@ var inputmaskPlugin = {
         Vue.directive('mask', {
             bind: function(el, binding) {
                 Inputmask(binding.value).mask(el);
+            },
+            update: function(el, binding){
+                Inputmask(binding.value).mask(el);
             }
         });
     }
